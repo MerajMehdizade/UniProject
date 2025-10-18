@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "yekanBakhRegular";
+    src: url("/fonts/YekanBakhFaNum-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "yekanBakhLight";
+    src: url("/fonts/YekanBakhFaNum-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "yekanBakhSemiBold";
+    src: url("/fonts/YekanBakhFaNum-SemiBold.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "yekanBakhBold";
+    src: url("/fonts/YekanBakhFaNum-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "yekanBakhExtraBold";
+    src: url("/fonts/YekanBakhFaNum-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "yekanBakhExtraBlack";
+    src: url("/fonts/YekanBakhFaNum-ExtraBlack.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "yekanBakhBlack";
+    src: url("/fonts/YekanBakhFaNum-Black.woff2") format("woff2");
+    font-weight: 950;
+    font-style: normal;
+}
+
+@theme {
+    --font-yekanBakhRegular: "yekanBakhRegular", sans-serif;
+    --font-yekanBakhLight: "yekanBakhLight", sans-serif;
+    --font-yekanBakhSemiBold: "yekanBakhSemiBold", sans-serif;
+    --font-yekanBakhBold: "yekanBakhBold", sans-serif;
+    --font-yekanBakhExtraBold: "yekanBakhExtraBold", sans-serif;
+    --font-yekanBakhExtraBlack: "yekanBakhExtraBlack", sans-serif;
+    --font-yekanBakhBlack: "yekanBakhBlack", sans-serif;
+}
