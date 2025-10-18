@@ -7,4 +7,5 @@ export default defineConfig({
   },
   output: "static",
   base: "/UniProject/",
+  site: 'https://MerajMehdizade.github.io',
 });
