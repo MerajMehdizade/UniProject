@@ -1,9 +1,11 @@
 ---
 import logo from "../assets/image/logo.png";
+import product1 from "../assets/image/products/1.webp";
+import product2 from "../assets/image/products/2.webp";
 ---
 
 <header
-  class="max-w-[1992px] fixed w-full z-50 flex md:block bg-white md:bg-transparent"
+  class="max-w-[1992px] fixed w-full z-50 flex md:block bg-white md:bg-transparent font-yekanBakhLight"
 >
   <!-- top -->
   <div
@@ -104,93 +106,6 @@ import logo from "../assets/image/logo.png";
             </g>
           </svg>
         </button>
-        <!-- Modal file -->
-        <div
-          id="modal-1"
-          class="Mymodal fixed inset-0 z-50 hidden bg-black/40 flex items-center justify-center"
-        >
-          <div
-            class="modal-content relative w-full max-w-7xl max-h-[90vh] transform scale-95 opacity-0 transition-all duration-300"
-          >
-            <div
-              class="bg-white rounded-2xl mx-auto border border-zinc-200 w-11/12 sm:w-7/12 md:w-6/12 lg:w-4/12 h-auto py-5 px-4"
-            >
-              <img class="w-32 mx-auto" src="assets/image/logo.png" alt="" />
-              <div class="mt-5 text-lg font-yekanBakhSemiBold text-zinc-800">
-                ورود یا ثبت نام
-              </div>
-              <div class="my-4 text-xs text-zinc-500">
-                لطفا شماره موبایل خود را وارد کنید
-              </div>
-              <div class="flex flex-col gap-y-1">
-                <input
-                  type="tel"
-                  placeholder="شماره تلفن"
-                  name=""
-                  class="placeholder:text-right text-sm block w-full rounded-md border border-gray-300 px-3 py-3 font-yekanBakhLight text-gray-700 outline-none transition-all focus:border-primary-500 focus:outline-none"
-                />
-              </div>
-              <a
-                href="#"
-                class="flex items-center justify-center gap-x-1 text-sm max-w-md mt-10 py-3 rounded-lg text-white bg-gradient-to-bl from-primary-600 to-primary-800 hover:opacity-85 transition"
-              >
-                ورود
-              </a>
-            </div>
-            <!-- verify -->
-            <div
-              class="bg-white rounded-2xl mx-auto border border-zinc-200 w-11/12 sm:w-7/12 md:w-6/12 lg:w-4/12 h-auto py-5 px-4"
-            >
-              <img class="w-32 mx-auto" src="./assets/image/logo.png" alt="" />
-              <div class="mt-5 text-lg font-yekanBakhSemiBold text-zinc-800">
-                تایید شماره موبایل
-              </div>
-              <div class="my-4 text-xs text-zinc-500">
-                لطفا کد 6 رقمی ارسال شده به شماره تلفن 09304809037 را وارد کنید.
-              </div>
-              <div
-                class="input-field mb-5 flex flex-row-reverse gap-x-4 justify-center"
-              >
-                <input
-                  name="code"
-                  class="code-input 213 border border-zinc-200 focus:border-zinc-400 w-10 h-11 rounded-md outline-none text-center focus:outline-0 focus:border focus:shadow-lg"
-                  required
-                />
-                <input
-                  name="code"
-                  class="code-input border border-zinc-200 focus:border-zinc-400 w-10 h-11 rounded-md outline-none text-center focus:outline-0 focus:border focus:shadow-lg"
-                  required
-                />
-                <input
-                  name="code"
-                  class="code-input border border-zinc-200 focus:border-zinc-400 w-10 h-11 rounded-md outline-none text-center focus:outline-0 focus:border focus:shadow-lg"
-                  required
-                />
-                <input
-                  name="code"
-                  class="code-input border border-zinc-200 focus:border-zinc-400 w-10 h-11 rounded-md outline-none text-center focus:outline-0 focus:border focus:shadow-lg"
-                  required
-                />
-                <input
-                  name="code"
-                  class="code-input border border-zinc-200 focus:border-zinc-400 w-10 h-11 rounded-md outline-none text-center focus:outline-0 focus:border focus:shadow-lg"
-                  required
-                />
-                <input
-                  name="code"
-                  class="code-input border border-zinc-200 focus:border-zinc-400 w-10 h-11 rounded-md outline-none text-center focus:outline-0 focus:border focus:shadow-lg"
-                  required
-                />
-              </div>
-              <a
-                href=""
-                class="flex items-center justify-center gap-x-1 text-sm max-w-md mt-10 py-3 rounded-lg text-white bg-gradient-to-bl from-primary-600 to-primary-800 hover:opacity-85 transition"
-              >
-                تایید
-              </a>
-            </div>
-          </div>
-        </div>
         <div
           class="z-50 group-hover:block left-0 top-[37px] w-60 rounded-lg bg-white shadow-lg hidden absolute"
         >
@@ -320,9 +235,9 @@ import logo from "../assets/image/logo.png";
         >
           <!-- Head -->
           <div
-            class="flex items-center justify-between p-4 pb-2 border-b border-zinc-200 mx-5"
+            class="flex items-center justify-center p-4 pb-2 border-b border-zinc-200 mx-5"
           >
-            <div class="text-sm text-zinc-500">2 کالا</div>
+            <div class="text-sm text-zinc-600">2 کالا</div>
           </div>
           <!-- Items -->
           <div class="h-60">
@@ -330,30 +245,30 @@ import logo from "../assets/image/logo.png";
               class="main-scroll h-full space-y-2 divide-y divide-gray-100 overflow-y-auto p-5 pl-2"
             >
               <li>
-                <div class="flex gap-x-2 py-5">
+                <div class="flex justify-center items-center gap-x-3 py-5">
                   <!-- Product -->
                   <div class="relative min-w-fit">
                     <a href="single-product.html">
                       <img
                         alt=""
-                        class="h-[120px] w-[120px] rounded-xl"
-                        src="assets/image/products/1.webp"
+                        class="h-[100px] w-[100px] rounded-xl object-cover"
+                        src={product1.src}
                       />
                     </a>
                   </div>
                   <div class="w-full space-y-1.5">
                     <!-- Title -->
                     <a
-                      class="line-clamp-2 h-12 text-zinc-700 font-yekanBakhRegular"
+                      class="line-clamp-2  text-zinc-700 font-yekanBakhRegular"
                       href="single-product.html"
                     >
-                      لپ تاپ مدل بنوو
+                      لپ تاپ مدل لنوو
                     </a>
                     <!-- Attribute -->
                     <div class="flex items-center justify-between gap-x-2">
                       <!-- Price -->
                       <div class="text-gray-700">
-                        <span class="text-sm">17,300,000</span>
+                        <span class="text-sm">20,000,000</span>
                         <span class="text-sm">تومان</span>
                       </div>
                       <!-- Quantity -->
@@ -404,30 +319,30 @@ import logo from "../assets/image/logo.png";
                 </div>
               </li>
               <li>
-                <div class="flex gap-x-2 py-5">
+                <div class="flex justify-center items-center gap-x-3 py-5">
                   <!-- Product -->
                   <div class="relative min-w-fit">
                     <a href="single-product.html">
                       <img
                         alt=""
-                        class="h-[120px] w-[120px] rounded-xl"
-                        src="assets/image/products/3.webp"
+                        class="h-[100px] w-[100px] rounded-xl object-cover"
+                        src={product2.src}
                       />
                     </a>
                   </div>
                   <div class="w-full space-y-1.5">
                     <!-- Title -->
                     <a
-                      class="line-clamp-2 h-12 text-zinc-700 font-yekanBakhRegular"
+                      class="line-clamp-2 text-zinc-700 font-yekanBakhRegular"
                       href="single-product.html"
                     >
-                      هنذفری بلوتوثی شیائومی
+                      کنسول Ps5
                     </a>
                     <!-- Attribute -->
                     <div class="flex items-center justify-between gap-x-2">
                       <!-- Price -->
                       <div class="text-gray-700">
-                        <span class="text-sm">1,800,000</span>
+                        <span class="text-sm">80,000,000</span>
                         <span class="text-sm">تومان</span>
                       </div>
                       <!-- Quantity -->
@@ -486,13 +401,13 @@ import logo from "../assets/image/logo.png";
             <div class="flex flex-col items-center gap-y-1">
               <div class="text-sm text-zinc-600">مبلغ قابل پرداخت</div>
               <div class="text-zinc-600">
-                <span class="font-yekanBakhBold">3,600,000</span>
+                <span class="font-yekanBakhBold">100,000,000</span>
                 <span class="text-xs">تومان</span>
               </div>
             </div>
             <a
               href="checkout.html"
-              class="w-28 py-3 text-sm bg-primary-600 hover:bg-primary-500 transition text-gray-100 rounded-xl text-center cursor-pointer"
+              class="w-28 py-3 text-sm bg-emerald-600 hover:bg-emerald-500 transition text-gray-100 rounded-xl text-center cursor-pointer"
             >
               <button class="cursor-pointer" type="button"> ثبت سفارش </button>
             </a>
@@ -800,80 +715,7 @@ import logo from "../assets/image/logo.png";
             >
           </a>
         </li>
-        <div class="relative inline-block group">
-          <a href="#" class="flex gap-x-2 items-center group relative">
-            <li
-              class="relative text-zinc-800 hover:text-primary-500 transition-all pb-2"
-            >
-              صفحات پروژه
-            </li>
-            <svg
-              class="group-hover:rotate-180 transition-all duration-300 fill-zinc-600 mb-2 group-hover:fill-primary-500"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="12"
-              fill="#000000"
-              viewBox="0 0 256 256"
-            >
-              <path
-                d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
-              ></path>
-            </svg>
-          </a>
-          <div
-            id="dropdown-menu"
-            class="absolute z-10 right-0 mt-2 w-72 h-fit bg-white p-5 shadow-lg rounded-3xl flex opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
-          >
-            <ul class="w-full rounded-2xl bg-white flex flex-col">
-              <li
-                class="w-full flex items-center gap-x-1 bg-gradient-to-l hover:from-zinc-100 hover:to-transparent text-sm rounded-lg px-4 py-3 text-gray-600 hover:text-primary-500 cursor-pointer"
-              >
-                <a class="w-full" href="index-2.html"> صفحه اصلی </a>
-              </li>
-
-              <li
-                class="w-full flex items-center gap-x-1 bg-gradient-to-l hover:from-zinc-100 hover:to-transparent text-sm rounded-lg px-4 py-3 text-gray-600 hover:text-primary-500 cursor-pointer"
-              >
-                <a class="w-full" href="aboutUs.html"> درباره ما </a>
-              </li>
-              <li
-                class="w-full flex items-center gap-x-1 bg-gradient-to-l hover:from-zinc-100 hover:to-transparent text-sm rounded-lg px-4 py-3 text-gray-600 hover:text-primary-500 cursor-pointer"
-              >
-                <a class="w-full" href="blogs.html"> وبلاگ </a>
-              </li>
-              <li
-                class="w-full flex items-center gap-x-1 bg-gradient-to-l hover:from-zinc-100 hover:to-transparent text-sm rounded-lg px-4 py-3 text-gray-600 hover:text-primary-500 cursor-pointer"
-              >
-                <a class="w-full" href="cart.html"> سبد خرید </a>
-              </li>
-              <li
-                class="w-full flex items-center gap-x-1 bg-gradient-to-l hover:from-zinc-100 hover:to-transparent text-sm rounded-lg px-4 py-3 text-gray-600 hover:text-primary-500 cursor-pointer"
-              >
-                <a class="w-full" href="checkout.html"> پرداخت </a>
-              </li>
-              <li
-                class="w-full flex items-center gap-x-1 bg-gradient-to-l hover:from-zinc-100 hover:to-transparent text-sm rounded-lg px-4 py-3 text-gray-600 hover:text-primary-500 cursor-pointer"
-              >
-                <a class="w-full" href="contactUs.html"> ارتباط با ما </a>
-              </li>
-              <li
-                class="w-full flex items-center gap-x-1 bg-gradient-to-l hover:from-zinc-100 hover:to-transparent text-sm rounded-lg px-4 py-3 text-gray-600 hover:text-primary-500 cursor-pointer"
-              >
-                <a class="w-full" href="dashboard.html"> داشبورد کاربر </a>
-              </li>
-              <li
-                class="w-full flex items-center gap-x-1 bg-gradient-to-l hover:from-zinc-100 hover:to-transparent text-sm rounded-lg px-4 py-3 text-gray-600 hover:text-primary-500 cursor-pointer"
-              >
-                <a class="w-full" href="search.html"> جستجو محصول </a>
-              </li>
-              <li
-                class="w-full flex items-center gap-x-1 bg-gradient-to-l hover:from-zinc-100 hover:to-transparent text-sm rounded-lg px-4 py-3 text-gray-600 hover:text-primary-500 cursor-pointer"
-              >
-                <a class="w-full" href="singleProduct.html"> جزئیات محصول </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        
       </ul>
     </div>
     <div class="hidden md:flex items-center gap-x-2 lg:gap-x-3">

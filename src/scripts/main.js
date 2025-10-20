@@ -178,42 +178,7 @@ buttons.forEach(btn => {
 if (buttons[0]) {
   buttons[0].click();
 }
-/////////////////////////////////////// modal login register
-document.querySelectorAll('.show-modal-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const id = btn.getAttribute('data-modal-id');
-    const modal = document.getElementById(id);
-    const content = modal.querySelector('.modal-content');
 
-    modal.classList.remove('hidden');
-
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        content.classList.remove('opacity-0', 'scale-95');
-        content.classList.add('opacity-100', 'scale-100');
-      });
-    });
-  });
-});
-document.querySelectorAll('.close-modal').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const modal = btn.closest('.Mymodal');
-    const content = modal.querySelector('.modal-content');
-    content.classList.remove('opacity-100', 'scale-100');
-    content.classList.add('opacity-0', 'scale-95');
-    setTimeout(() => modal.classList.add('hidden'), 300);
-  });
-});
-document.querySelectorAll('.Mymodal').forEach(modal => {
-  modal.addEventListener('click', e => {
-    if (e.target === modal) {
-      const content = modal.querySelector('.modal-content');
-      content.classList.remove('opacity-100', 'scale-100');
-      content.classList.add('opacity-0', 'scale-95');
-      setTimeout(() => modal.classList.add('hidden'), 300);
-    }
-  });
-});
 /////////////////////////////////////// product image in single product
 const mainImage = document.getElementById('mainImage');
 const zoomBox = document.getElementById('zoomBox');
