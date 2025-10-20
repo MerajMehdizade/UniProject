@@ -320,8 +320,9 @@ document.querySelectorAll(".modal").forEach((modal) => {
 
 
 window.onload = function() {
-   alert("📌 نکات گزارش‌ها:\n\n" +
-      "در گزارش اول: تکمیل کردن header\n" +
-      "در گزارش دوم: اضافه کردن footer و sliderSwiper");
+alert("📌 نکات گزارش‌ها:\n\n" +
+      "در 24 مهر: گزارش اول - تکمیل کردن header\n" +
+      "در 28 مهر: گزارش دوم - اضافه کردن footer و sliderSwiper");
+
 
 };
