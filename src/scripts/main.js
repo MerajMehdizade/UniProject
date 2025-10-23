@@ -34,20 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-/////////////////////////////////////// open filter in search products
-if (document.getElementById("mobile-filter")) {
-  const filters = document.getElementById("mobile-filter");
-  const openFilter = document.querySelector(".filter-mobile");
-  const closeFilter = document.getElementById("closeFilter");
-  function openMenu() {
-    filters.classList.remove("translate-y-full");
-  }
-  function closeMenu() {
-    filters.classList.add("translate-y-full");
-  }
-  openFilter.addEventListener("click", openMenu);
-  closeFilter.addEventListener("click", closeMenu);
-}
 /////////////////////////////////////// open and close menu/submenu
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggles = document.querySelectorAll(".menu-toggle");
@@ -120,65 +106,6 @@ function onSubmit(e){
   const code = inputElements.map(({value})=>value).join('')
   console.log(code)
 }
-/////////////////////////////////////// select category
-const products = {
-  electronics: ['فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی'],
-  clothing: ['فرز الماسی مانی', 'فرز الماسی مانی'],
-  books: ['فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی'],
-  sports: ['فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی'],
-  beauty: ['فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی', 'فرز الماسی مانی'],
-};
-const productList = document.getElementById('productList');
-const buttons = document.querySelectorAll('.category-btn');
-buttons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const category = btn.dataset.category;
-    const items = products[category] || [];
-    productList.innerHTML = items.map(item =>
-      `<div class="card swiper-slide bg-white border border-zinc-200 rounded-2xl p-2 md:p-3 text-sm hover:shadow-custom transition-shadow">
-      <a href="" class="text-zinc-800">
-        <img class="rounded-xl mb-3" src="./assets/image/products/1.webp">
-      </a>
-      <p class="text-zinc-400 text-xs">
-        Lap Top Lenovo Laser 107W
-      </p>
-      <a href="" class="text-zinc-800 text-xs md:text-sm h-8 lg:h-10 line-clamp-2 mt-2">
-        لپ تاپ لنوو تک رنگ مدل Laser 107W اصلی
-      </a>
-      <div class="flex items-center justify-between mt-4">
-        <div class="flex gap-1.5">
-          <div class="size-4 bg-zinc-800 rounded-full"></div>
-          <div class="size-4 bg-zinc-500 rounded-full"></div>
-          <div class="size-4 bg-zinc-300 rounded-full"></div>
-        </div>
-        <div class="flex items-start gap-x-1 text-xs text-zinc-500">
-          <span>
-            <span>
-              (72)
-            </span>
-            <span>
-              4.4
-            </span>
-          </span>
-          <svg class="fill-primary-500" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#f9bc00" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
-        </div>
-      </div>
-      <div class="flex items-center justify-end border-t border-dashed border-zinc-300 mt-4 pt-2">
-        <div class="text-zinc-800 flex items-center gap-x-1 justify-end font-yekanBakhBold text-lg">
-          1,270,000
-          <img class="size-4" src="./assets/image/icons/toman.png" alt="">
-        </div>
-      </div>
-    </div>`
-    ).join('');
-    buttons.forEach(b => b.classList.remove('bg-zinc-100', 'text-primary-500'));
-    btn.classList.add('bg-zinc-100', 'text-primary-500');
-  });
-});
-if (buttons[0]) {
-  buttons[0].click();
-}
-
 /////////////////////////////////////// product image in single product
 const mainImage = document.getElementById('mainImage');
 const zoomBox = document.getElementById('zoomBox');
@@ -286,8 +213,8 @@ document.querySelectorAll(".modal").forEach((modal) => {
 
 window.onload = function() {
 alert("📌 نکات گزارش‌ها:\n\n" +
-      "در 24 مهر: گزارش اول - تکمیل کردن header\n" +
-      "در 28 مهر: گزارش دوم - اضافه کردن footer و sliderSwiper");
-
-
+      "در 24 مهر: گزارش اول - تکمیل کردن Header\n" +
+      "در 27 مهر: گزارش دوم - اضافه کردن Footer و SliderSwiper\n"+
+      "در 30 مهر: گزارش سوم - اضافه کردن Category و FilterProducts"
+    );
 };

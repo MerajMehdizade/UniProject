@@ -1,8 +1,14 @@
+---
+import logo from "../assets/image/logo.png";
+import symbol02 from "../assets/image/service/symbol-02.png";
+import zarinPal from "../assets/image/service/zarinPal.png";
+---
+
 <footer class="bg-white border-t border-zinc-200 w-full px-5 md:px-10 py-5 font-yekanBakhRegular">
     <!-- logo, des, go to up -->
     <div class="flex gap-x-8 gap-y-4 items-center md:items-start flex-wrap md:flex-nowrap justify-between mb-12">
       <div class="w-4/12 md:w-1/12 order-1 md:order-none">
-        <img class="w-full" src="assets/image/logo.png" alt="">
+        <img class="w-full" src={logo.src} alt="">
       </div>
       <div class="md:w-10/12 text-xs text-zinc-400 leading-7 order-3 md:order-none text-justify">
         دیجی استار فروشگاه آنلاین معتبری است که انواع کالاهای دیجیتال مانند گوشی، لپ‌تاپ، تبلت و لوازم جانبی را با ضمانت اصالت و ارسال سریع ارائه می‌دهد. با تنوع گسترده محصولات، قیمت‌های رقابتی و پشتیبانی حرفه‌ای، خریدی آسان و مطمئن را تجربه کنید. بررسی تخصصی، مقایسه و انتخاب آگاهانه از مزایای خرید از دیجی استار است. برای دسترسی به جدیدترین محصولات دیجیتال، همین حالا به دیجی استار سر بزنید!
@@ -139,22 +145,22 @@
           <div class="">
             <ul class="flex flex-col gap-y-5">
               <a href="#">
-                <li class="text-zinc-400 hover:text-primary-500 transition-all text-xs hover:pr-1 ease-out duration-300">
+                <li class="text-zinc-400 hover:text-orange-500 transition-all text-xs hover:pr-1 ease-out duration-300">
                   وبلاگ
                 </li>
               </a>
               <a href="#">
-                <li class="text-zinc-400 hover:text-primary-500 transition-all text-xs hover:pr-1 ease-out duration-300">
+                <li class="text-zinc-400 hover:text-orange-500 transition-all text-xs hover:pr-1 ease-out duration-300">
                   درباره ما
                 </li>
               </a>
               <a href="#">
-                <li class="text-zinc-400 hover:text-primary-500 transition-all text-xs hover:pr-1 ease-out duration-300">
+                <li class="text-zinc-400 hover:text-orange-500 transition-all text-xs hover:pr-1 ease-out duration-300">
                   تماس با ما
                 </li>
               </a>
               <a href="#">
-                <li class="text-zinc-400 hover:text-primary-500 transition-all text-xs hover:pr-1 ease-out duration-300">
+                <li class="text-zinc-400 hover:text-orange-500 transition-all text-xs hover:pr-1 ease-out duration-300">
                   سوالات متداول
                 </li>
               </a>
@@ -168,27 +174,27 @@
           <div class="">
             <ul class="gap-y-5 grid grid-rows-4 row">
               <a href="#">
-                <li class="text-zinc-400 hover:text-primary-500 transition-all text-xs hover:pr-1 ease-out duration-300">
+                <li class="text-zinc-400 hover:text-orange-500 transition-all text-xs hover:pr-1 ease-out duration-300">
                   شیائومی
                 </li>
               </a>
               <a href="#">
-                <li class="text-zinc-400 hover:text-primary-500 transition-all text-xs hover:pr-1 ease-out duration-300">
+                <li class="text-zinc-400 hover:text-orange-500 transition-all text-xs hover:pr-1 ease-out duration-300">
                   سامسونگ
                 </li>
               </a>
               <a href="#">
-                <li class="text-zinc-400 hover:text-primary-500 transition-all text-xs hover:pr-1 ease-out duration-300">
+                <li class="text-zinc-400 hover:text-orange-500 transition-all text-xs hover:pr-1 ease-out duration-300">
                   آیفون
                 </li>
               </a>
               <a href="#">
-                <li class="text-zinc-400 hover:text-primary-500 transition-all text-xs hover:pr-1 ease-out duration-300">
+                <li class="text-zinc-400 hover:text-orange-500 transition-all text-xs hover:pr-1 ease-out duration-300">
                   ال جی
                 </li>
               </a>
               <a href="#">
-                <li class="text-zinc-400 hover:text-primary-500 transition-all text-xs hover:pr-1 ease-out duration-300">
+                <li class="text-zinc-400 hover:text-orange-500 transition-all text-xs hover:pr-1 ease-out duration-300">
                   هاوائی
                 </li>
               </a>
@@ -224,8 +230,8 @@
         </div>
       </div>
       <div class="md:w-4/12 flex justify-center gap-x-7">
-        <img class="h-fit max-w-20 md:max-w-28" src="assets/image/service/symbol-02.png" alt="">
-        <img class="h-fit max-w-20 md:max-w-28" src="assets/image/service/zarinPal.png" alt="">
+        <img class="h-fit max-w-20 md:max-w-28" src={symbol02.src} alt="">
+        <img class="h-fit max-w-20 md:max-w-28" src={zarinPal.src} alt="">
       </div>
       <div class="md:w-4/12">
         <p class="text-xs text-zinc-400 pt-6 pb-3 pr-2">
@@ -342,7 +348,7 @@
     <!-- copyright -->
     <a href="https://www.rtl-theme.com/author/amirtttk/products/" class="block mt-10 pt-5 text-xs leading-5 text-zinc-500 border-t border-zinc-200">
       طراحی و توسعه توسط
-      <span class="text-xs md:text-sm text-primary-500 font-yekanBakhBold">
+      <span class="text-xs md:text-sm text-orange-500 font-yekanBakhBold">
        معراج مهدیزاده
       </span>
         .
