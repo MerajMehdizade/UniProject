@@ -8,7 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "deploy": " echo > dist/.nojekyll && gh-pages -d dist --dotfiles",
-    "super-deploy": "git add . && set /p msg=\"Commit message: \" && git commit -m \"%msg%\" && git push origin main && npm install && npm run build && npm run deploy"
+    "super-deploy": "cmd /c \"set /p msg=Commit message: && git add . && git commit -m \\\"%msg%\\\" && git push origin main && npm install && npm run build && npm run deploy\""
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",
